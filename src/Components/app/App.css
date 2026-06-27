@@ -1,6 +1,6 @@
-.App{
+.App {
   width: 100%;
-  min-height: 600px;
-  background: grey;
-  float: left;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }

@@ -1,0 +1,55 @@
+.nf-page {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 6rem 2rem;
+  text-align: center;
+  gap: 1rem;
+}
+
+.nf-code {
+  font-family: 'Orbitron', sans-serif;
+  font-size: clamp(5rem, 15vw, 10rem);
+  font-weight: 900;
+  color: transparent;
+  -webkit-text-stroke: 2px var(--accent);
+  line-height: 1;
+  opacity: 0.35;
+}
+
+.nf-title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: 2px;
+}
+
+.nf-text {
+  color: var(--text-muted);
+  font-size: 1rem;
+}
+
+.nf-btn {
+  margin-top: 0.5rem;
+  display: inline-block;
+  padding: 0.7rem 2rem;
+  background: var(--accent);
+  color: #fff;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: opacity 0.2s, box-shadow 0.2s;
+  box-shadow: var(--shadow-glow);
+}
+
+.nf-btn:hover {
+  opacity: 0.85;
+  box-shadow: 0 0 30px var(--accent-glow);
+}

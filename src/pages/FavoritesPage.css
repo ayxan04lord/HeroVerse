@@ -1,0 +1,114 @@
+.fav-page {
+  flex: 1;
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 3rem 2rem 4rem;
+  animation: fadeIn 0.35s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.fav-header {
+  margin-bottom: 2.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.fav-title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--text-primary);
+  letter-spacing: 2px;
+  margin-bottom: 0.4rem;
+}
+
+.fav-sub {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.fav-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.75rem;
+}
+
+.fav-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 2rem;
+  text-align: center;
+  gap: 1rem;
+}
+
+.fav-empty-icon {
+  font-size: 4rem;
+  opacity: 0.35;
+}
+
+.fav-empty h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.3rem;
+  color: var(--text-secondary);
+}
+
+.fav-empty p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.fav-empty-btn {
+  margin-top: 0.5rem;
+  padding: 0.7rem 2rem;
+  background: var(--accent);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 50px;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: opacity 0.2s, transform 0.2s;
+  box-shadow: var(--shadow-glow);
+}
+.fav-empty-btn:hover {
+  opacity: 0.85;
+  transform: translateY(-2px);
+}
+
+.fav-clear-row {
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.fav-clear-btn {
+  padding: 0.55rem 1.5rem;
+  border: 1px solid var(--border-hover);
+  border-radius: 50px;
+  background: transparent;
+  color: var(--text-muted);
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.22s ease;
+}
+.fav-clear-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+@media (max-width: 768px) {
+  .fav-page { padding: 2rem 1rem 3rem; }
+  .fav-grid { grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 1.25rem; }
+}
